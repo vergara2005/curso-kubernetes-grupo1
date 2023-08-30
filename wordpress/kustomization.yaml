@@ -4,7 +4,7 @@ generatorOptions:
 secretGenerator:
 - name: mysql-pass
   literals:
-  - password="grupo1"
+  - password=grupo1
 resources:
   - wp.yaml
   - wordpress-deployment.yaml
