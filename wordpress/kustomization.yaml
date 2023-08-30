@@ -8,6 +8,6 @@ secretGenerator:
   literals:
   - password=grupo1
 resources:
-- namespace.yaml
+- wp.yaml
 - mysql-deployment.yaml
 - wordpress-deployment.yaml
