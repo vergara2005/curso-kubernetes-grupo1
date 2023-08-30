@@ -1,6 +1,13 @@
-cat <<EOF >./kustomization.yaml
+kind: Kustomization
+generatorOptions:
+  disableNameSuffixHash: true
+labels:
+  password: grupo1
 secretGenerator:
 - name: mysql-pass
   literals:
   - password=grupo1
-EOF
+resources:
+- namespace.yaml
+- mysql-deployment.yaml
+- wordpress-deployment.yaml
