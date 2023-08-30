@@ -1,13 +1,8 @@
-kind: Kustomization
-generatorOptions:
-  disableNameSuffixHash: true
-labels:
-  password: grupo1
 secretGenerator:
 - name: mysql-pass
   literals:
-  - password=grupo1
+  - password="grupo1"
 resources:
-- wp.yaml
-- mysql-deployment.yaml
-- wordpress-deployment.yaml
+  - wp.yaml
+  - wordpress-deployment.yaml
+  - deployment.yaml
