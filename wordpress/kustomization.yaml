@@ -1,6 +1,3 @@
-kind: Kustomization
-generatorOptions:
-  disableNameSuffixHash: true
 secretGenerator:
 - name: mysql-pass
   literals:
