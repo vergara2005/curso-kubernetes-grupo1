@@ -1,6 +1,8 @@
 kind: Kustomization
 generatorOptions:
   disableNameSuffixHash: true
+  labels:
+    password: grupo1
 secretGenerator:
 - name: mysql-pass
   literals:
