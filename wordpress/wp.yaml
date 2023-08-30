@@ -1,1 +1,6 @@
-Se crea nueva carpeta y nuevo namespace wp.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+name: wp
+labels:
+name: wp
